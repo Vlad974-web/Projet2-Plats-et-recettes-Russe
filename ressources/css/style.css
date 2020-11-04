@@ -1,0 +1,388 @@
+/* DOCUMENT INFORMATION 
+    -Document: fils
+    -Version: 1.0.0
+    -Author: Vlad
+*/
+
+/* COLORS 
+    - defauts body text 
+    -h1                 #5d2689
+    -h2                 #C7A249
+    -h3                 #fff
+    -h4                 --------
+    -p                  #fff
+    -li                 #fff
+    -blockquote         black
+
+    -button
+    - button:hover       
+
+    -border
+*/
+
+/* FONTS 
+    -Default            
+    -Subtitle
+    -h1                 'Leckerli One', cursive
+    -h2                 'Pacifico', cursive
+    -h3                 'Dancing Script', cursive
+    -h4                 'Spectral SC', serif
+    -p                  'Trispace', sans-serif
+    -li                 'Markazi Text', serif
+    -blockquote         'Anton', sans-serif
+*/
+
+/* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+    3. =PRESENTATION
+    4. =OUR DISHES
+    5. =CUSTOMERS OPINION
+*/
+
+/* ======== GLOBAL =============
+============================= */
+
+html {
+    background-color: #fff;
+}
+
+h1 {
+    font-family: 'Leckerli One', cursive;
+    color: #5d2689;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: #C7A249;
+    text-transform: uppercase;
+    font-size: 300%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 100px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+    font-weight: 800;
+    color: #fff;
+}
+
+h4 {
+    font-family: 'Spectral SC', serif;
+    font-size: 250%;
+}
+
+p {
+    font-family: 'Trispace', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #fff;
+}
+
+li {
+    font-family: 'Markazi Text', serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+/* ======== HEADER =============
+============================= */
+
+header {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.accueil {
+    background-image: url(../images/poupées\ gigognes.jpg);
+}
+
+.home-title {
+    position: absolute;
+    top: 40%;
+}
+
+.home-title h1 {
+    font-size: 400%;
+    color: #5d2689;
+}
+
+.home-title p {
+    color: #5d2689;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.block1 {
+    background-color: black;
+    height: 60px;
+    width: 20px;
+}
+
+.block2 {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-top: 40px solid black;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    margin-left: -20px;
+}
+
+.arrow {
+    animation: animate 2s infinite;
+    animation-timing-function: linear;
+    padding: 650px;
+    margin: -500px;
+}
+
+@keyframes animate {
+    0% {
+        margin-top: 20px;
+    }
+    50% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 20px;
+    }
+}
+
+/* ======== HEADER BORTSCH =============
+============================= */
+
+.bortsch {
+    background-color: #343a40;
+    height: 180vh;
+}
+
+.bortsch-title h1 {
+    font-size: 500%;
+    color: #C7A249;
+    text-align: left;
+}
+
+/* ======== HEADER CHACHLIK =============
+============================= */
+.chachlik {
+    background-color: #343a40;
+    height: 100vh;
+}
+
+.chachlik-title h1 {
+    font-size: 500%;
+    color: #C7A249;
+    text-align: left;
+}
+
+/* ======== HEADER GOLUBTSY =============
+============================= */
+
+.golubtsy {
+    background-color: #343a40;
+    height: 150vh;
+}
+
+.golubtsy-title h1 {
+    font-size: 500%;
+    color: #C7A249;
+    text-align: left;
+}
+
+/* ======== HEADER PELMENI =============
+============================= */
+
+.pelmeni {
+    background-color: #343a40;
+    height: 130vh;
+}
+
+.pelmeni-title h1 {
+    font-size: 500%;
+    color: #C7A249;
+    text-align: left;
+}
+
+/* ======== HEADER SHUBA =============
+============================= */
+
+.shuba {
+    background-color: #343a40;
+    height: 150vh;
+}
+
+.shuba-title h1 {
+    font-size: 500%;
+    color: #C7A249;
+    text-align: left;
+}
+
+/* ======== HEADER SYRNIKI =============
+============================= */
+
+.syrniki {
+    background-color: #343a40;
+    height: 100vh;
+}
+
+.syrniki-title h1 {
+    font-size: 500%;
+    color: #C7A249;
+    text-align: left;
+}
+
+
+
+/* ======== PRESENTATION =============
+============================= */
+
+.national-img {
+    width: 130%;
+    height: auto;
+}
+
+.description {
+    margin: 30px 0;
+}
+
+.description :hover {
+    color: #C7A249;
+    transform: translate(-20px);
+    transition: all 2s;
+}
+
+.national { 
+    background-color: #4C191B;
+}
+
+/* ======== OUR DISHES =============
+============================= */
+
+.dishes {
+    background-color: #343a40;
+}
+
+.dishes-img img {
+    height: 300px;
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin: 10px;
+    width: 80%;
+    position: relative;
+}
+
+.dishes-title {
+    position: absolute;
+    color: #f4e671;
+    left: 40px;
+    top: 5%;
+}
+
+.dishes-title2 {
+    position: absolute;
+    left: 40px;
+    top: 5%;
+}
+
+.dishes-title3 {
+    position: absolute;
+    left: 40px;
+    color: #ff2525;
+    top: 5%;
+}
+
+.dishes-title4 {
+    position: absolute;
+    left: 40px;
+    color: #f4e671;
+    top: 5%;
+}
+
+.dishes-title5 {
+    position: absolute;
+    left: 40px;
+    top: 5%;
+}
+
+.dishes-title6 {
+    position: absolute;
+    left: 40px;
+    color: #f4e671;
+    top: 5%;
+}
+
+/* ======== CUSTOMERS OPINION =============
+============================= */
+
+.customers {
+    background-image: url(../images/bluda.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.customers h2 {
+    color: black;
+}
+
+blockquote {
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 5px;
+    font-style: italic;
+    line-height: 150%;
+}
+
+.fa-double-left::before {
+    content: "\00ab";
+    font-size: 150%;
+}
+
+.fa-double-right::before {
+    content: "\00bb";
+    font-size: 150%;
+}
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+
+cite img {
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
