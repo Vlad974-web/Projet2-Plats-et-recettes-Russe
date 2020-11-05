@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     <!--===============FONTS===============-->
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Leckerli+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@300;700&display=swap" rel="stylesheet"> 
@@ -11,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@800&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">  
 
     <!--===============STYLE===============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -21,23 +25,90 @@
 
     <header class="syrniki">
 
+        <!--=============== NAVBAR ===============-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand" href="./index.html">
+                    <img src="ressources/images/logo.jpg" width="45" height="45" alt="logo">
+                    Des plats et recettes
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#monMenu" aria-controls="monMenu"
+                aria-label="Menu pour mobile">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="monMenu">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="/">Accueil</a>
+                        <a class="nav-item nav-link" href="#national">National</a>
+                        <a class="nav-item nav-link" href="#dishes">Nos Plats</a>
+                        <a class="nav-item nav-link" href="./contact.html">Contact</a>
+                        <a class="nav-item nav-link" href="inscription.html">Inscription</a>
+                        <a class="nav-item nav-link" href="./connexion.html">Connexion</a>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+
         <div class="container">
             <div class="row">
                 <div class="col-md-12 syrniki-title">
                     <h1>Syrniki</h1>
                     <p>Temps: 20mn</p>
                     <p>Personnes: 3</p>
-                    <p>Ingrédients: 1 oeuf, 2 cs de sucre de canne, 250 g de ricotta, 3 cs de farine, pour le plan de travail, un peu de farine, 1 peu d' huile d'olive, 1 pincée fleur de sel.</p>
+                    <p>Ingrédients: 1 oeuf, 2 cs de sucre de canne, 250 g de ricotta, 3 cs de farine, pour le plan de travail, <br>un peu de farine, 1 peu d' huile d'olive, 1 pincée fleur de sel.</p>
                     <h2 class="preparation">etaps de préparation</h2>
                         <ol class="recipe-preparation">
                             <li>Battez la ricotta avec l’œuf.Ajoutez le sucre, la pincée de sel et la farine.Continuez de battre le mélange.</li>
-                            <li>Farinez généreusement le plan de travail.Déposez de grosses cuillerées de pâte. Aplatissez-les pour en faire des galettes (pas trop simple à faire).</li>
-                            <li>Chauffez de l’huile dans une poêle de taille moyenne.Déposez vos galettes et faites-les cuire à feu doux trois minutes de chaque côté.</li>
-                            <li>Elles se dégustent tièdes ou froides avec de la crème fraîche, de la confiture, du miel et du jus de pomme. J’ai fait comme Carole, je les ai accompagnées d’un coulis de framboises. C’était parfait.</li>
+                            <li>Farinez généreusement le plan de travail.Déposez de grosses cuillerées de pâte. Aplatissez-les pour en faire <br>des galettes (pas trop simple à faire).</li>
+                            <li>Chauffez de l’huile dans une poêle de taille moyenne.Déposez vos galettes et faites-les cuire à feu doux trois <br>minutes de chaque côté.</li>
+                            <li>Elles se dégustent tièdes ou froides avec de la crème fraîche, de la confiture, du miel et du jus de pomme. Je les ai <br>accompagnées d’un coulis de framboises. C’était parfait.</li>
                         </ol>
                 </div>
             </div>
         </div>
     </header>
+
+    <!--=============== FOOTER ===============-->
+
+    <footer>
+
+        <div class="copyright">
+            <p>© 2020 Cité du Goût et des Saveurs en Loire-Atlantique. Tous droits réservés.
+                <a href="/">Mentions légales</a>
+            </p>
+        </div>
+
+        <div class="icons-social"></a>
+
+            <a href="https://www.facebook.com/profile.php?id=100005918256998" target="_blanck"> 
+                <i id="FB" class="fab fa-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/vladkaa05/" target="_blanck">
+                <i id="insta" class="fab fa-instagram-square"></i>
+            </a>
+
+            <i id="snap" class="fab fa-snapchat"></i>
+
+            <a href="https://github.com/Vlad974-web" target="_blanck">
+                <i class="fab fa-git"></i>
+            </a>
+
+        </div>
+
+
+    </footer>
+
+    <!--=============== SCRIPTS ===============-->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
 </body>    
 </html>

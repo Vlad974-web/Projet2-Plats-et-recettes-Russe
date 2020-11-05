@@ -35,9 +35,12 @@
 /* CSS DIRECTORY
     1. =GLOBAL
     2. =HEADER
-    3. =PRESENTATION
-    4. =OUR DISHES
-    5. =CUSTOMERS OPINION
+    3. =BUTTON
+    4. =PRESENTATION
+    5. =OUR DISHES
+    6. =CUSTOMERS OPINION
+    7. =INSCRIPTION
+    8. =CONNEXION
 */
 
 /* ======== GLOBAL =============
@@ -184,6 +187,11 @@ header {
     height: 180vh;
 }
 
+.bortsch-title {
+    position: absolute;
+    top: 10%;
+}
+
 .bortsch-title h1 {
     font-size: 500%;
     color: #C7A249;
@@ -195,6 +203,11 @@ header {
 .chachlik {
     background-color: #343a40;
     height: 100vh;
+}
+
+.chachlik-title {
+    position: absolute;
+    top: 10%;
 }
 
 .chachlik-title h1 {
@@ -211,6 +224,11 @@ header {
     height: 150vh;
 }
 
+.golubtsy-title {
+    position: absolute;
+    top: 10%;
+}
+
 .golubtsy-title h1 {
     font-size: 500%;
     color: #C7A249;
@@ -223,6 +241,11 @@ header {
 .pelmeni {
     background-color: #343a40;
     height: 130vh;
+}
+
+.pelmeni-title {
+    position: absolute;
+    top: 10%;
 }
 
 .pelmeni-title h1 {
@@ -239,6 +262,11 @@ header {
     height: 150vh;
 }
 
+.shuba-title {
+    position: absolute;
+    top: 10%;
+}
+
 .shuba-title h1 {
     font-size: 500%;
     color: #C7A249;
@@ -253,10 +281,38 @@ header {
     height: 100vh;
 }
 
+.syrniki-title {
+    position: absolute;
+    top: 10%;
+}
+
 .syrniki-title h1 {
     font-size: 500%;
     color: #C7A249;
     text-align: left;
+}
+
+/* ======== BUTTON =============
+============================= */
+
+.btn {
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.btn-contact {
+    width: 100%;
+    text-align: center;
+    background-color: azure;
+    color: rgb(14, 73, 236);
+}
+
+.btn-contact:hover {
+    background-color:rgb(14, 73, 236);
+    color: #fff;
 }
 
 
@@ -385,4 +441,87 @@ cite img {
     height: 150px;
     border-radius: 50%;
     margin-right: 30px;
+}
+
+/* ======== CONTACT =============
+============================= */
+
+.contact {
+    background-color: #fff;
+    height: 100vh;
+   
+}
+
+label {
+    display: inline-block;
+}
+
+.contact-header {
+    background-image: url(../images/Nous-Contacter.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    max-width: 100%;
+}
+
+/* ======== INSCRIPTION =============
+============================= */
+
+.inscription-header {
+    background-image: url(../images/inscription.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    max-width: 100%;
+}
+
+.inscription-yes {
+    color: black;
+    margin: 20px;
+}
+
+/* ======== CONNEXION =============
+============================= */
+
+.connexion-header {
+    background-image: url(../images/connexion.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    max-width: 100%;
+}
+
+.form-connexion {
+    font-size: 28px;
+    border: 5px solid #ffefb1;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: #fff6c6;
+}
+
+/* ======== FOOTER =============
+============================= */
+
+footer {
+    height: 135px;
+    width: 100%;
+    background-color: #5b470b80;
+    text-align: center;
+}
+
+.icons-social i {
+    font-size: 60px;
+    cursor: pointer;
+    margin: 15px 15px 15px 15px;
+}
+
+.icons-social i:hover {
+    color: green;
 }
